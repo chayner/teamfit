@@ -11,11 +11,11 @@
 
 # TECHNOLOGY COLOPHON
 
-  Jekyll
+  Jekyll static site generator
   Yeoman
   Gulp
   Bower
   Sass
-  CoffeeScript
+  Coffeescript
   HTML5 ★ Boilerplate
   Bourbon
