@@ -1,0 +1,44 @@
+.header {
+  background: $dark-blue;
+  color: $white;
+  margin-bottom: $base-spacing;
+  .header-wrap {
+    padding: $base-spacing;
+  }
+}
+
+.episode {
+  background: $light-blue;
+  min-height: 200px;
+  padding: $base-spacing;
+}
+
+.content-block {
+  background: $light-gray;
+  margin-bottom: $base-spacing;
+  min-height: 200px;
+  padding: $base-spacing;
+
+  &#featured {
+    min-height: 300px;
+  }
+}
+
+.sidebar-block {
+  background: $action-color;
+  margin-bottom: $base-spacing;
+  min-height: 100px;
+  padding: $base-spacing;
+}
+
+.footer {
+  background: $dark-blue;
+  padding: $base-spacing;
+  .footer-box {
+    background: $light-gray;
+    margin-bottom: $base-spacing;
+
+    min-height: 100px;
+    padding: $base-spacing; 
+  }
+}

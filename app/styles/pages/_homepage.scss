@@ -1,0 +1,93 @@
+
+.page-wrap {
+  @include outer-container;
+  padding: 0 $base-spacing;
+  @include media($huge-screen-up) {
+    padding: 0;
+  }
+}
+
+
+.header {
+  .header-wrap {
+    @include outer-container();
+  }
+
+}
+
+
+.main-body {
+  @include fill-parent();
+
+  @include media($large-screen-up) {
+    @include span-columns(9);
+  }
+  
+  .content-block {
+    .inner-wrap {
+      @include outer-container();
+    }
+  }
+  
+  .episode {
+    @include fill-parent();
+    margin-bottom: $base-spacing;
+
+    @include media($medium-screen-up) {
+      @include span-columns(2);
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+
+.sidebar {
+  @include fill-parent();
+
+  @include media($large-screen-up) {
+    @include span-columns(3);
+    @include omega();
+  }
+
+  .sidebar-block {
+    @include span-columns(6);
+    @include omega(1+2n);
+
+    @include media($large-screen-up) {
+      @include fill-parent();
+    }
+
+    &.sidebar-double {
+      @include fill-parent();
+    }
+
+  }
+}
+
+
+.footer {
+  @include span-columns(12);
+  
+  .footer-wrap {
+    @include outer-container();
+  }
+  
+  .footer-box {
+    @include span-columns(6);
+    @include omega(2n);
+
+    &.footer-double {
+      @include fill-parent();
+      @include media($large-screen-up) {
+        @include span-columns(4);
+      }
+    }
+
+    @include media($large-screen-up) {
+      @include omega-reset(2n);
+      @include span-columns(4);
+    }
+  }
+
+}

@@ -15,7 +15,29 @@
   </head>
 
   <body class="{{ page.body_class }}">
+    <header class="header">
+      <div class="header-wrap">
+        <h1>CBTS Homepage</h1>
+      </div>
+    </header>
+
     {{ content }}
+
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-box">
+          Book Chris
+        </div>
+
+        <div class="footer-box">
+          About the Show
+        </div>
+
+        <div class="footer-box footer-double">
+          Newsletter CTA
+        </div>
+      </div>
+    </footer>
 
     {% include shared/scripts.html %}
   </body>
